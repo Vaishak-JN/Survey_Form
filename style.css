@@ -1,0 +1,134 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.content {
+  padding: 15px;
+  border: solid 0.5px black;
+  width: 70vw;
+  margin: 10px 10px;
+}
+input {
+  width: 200px;
+  transition: all 0.2s linear;
+}
+div {
+  display: inline-block;
+  margin: 10px;
+}
+label {
+  margin: 10px;
+}
+#heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+#subName {
+  margin-left: 0;
+}
+#email {
+  width: 430px;
+}
+#red {
+  color: red;
+}
+#heading::after {
+  content: "*";
+  color: red;
+}
+h2::after {
+  content: "*";
+  color: red;
+}
+p {
+  margin: 10px;
+}
+h2 {
+  font-size: 1em;
+  margin: 10px;
+}
+table {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 90%;
+}
+th,
+td {
+  font-weight: normal;
+  width: 150px;
+  height: 15px;
+  /* align-items: center; */
+  padding: 5px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+textarea {
+  width: 90%;
+  height: 140px;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  display: block;
+  margin: 10px;
+  width: 6em;
+  height: 2em;
+  border-radius: 0px;
+}
+tr:nth-child(even):hover {
+  background-color: silver;
+}
+tr:nth-child(odd):hover {
+  background-color: seashell;
+}
+#first:hover {
+  box-shadow: 2px 3px 4px;
+  transform: translate(1px, 1px);
+}
+#last:hover {
+  box-shadow: 2px 3px 4px;
+  transform: translate(1px, 1px);
+}
+#email:hover {
+  box-shadow: 2px 3px 4px;
+  transform: translate(1px, 1px);
+}
+
+table:hover {
+  box-shadow: 2px 3px 5px;
+  transform: translate(3px, 3px);
+}
+button:hover {
+  background-color: gainsboro;
+  box-shadow: 2px 3px 3px;
+  border-radius: 10%;
+}
+textarea:hover {
+  background-color: whitesmoke;
+}
+/* star color */
+.checked {
+  color: orange;
+}
+#service {
+  width: 80px;
+}
+#overall {
+  width: 80px;
+}
+#Buy {
+  width: 80px;
+}
+#recpro {
+  width: 80px;
+}
+#reccomp {
+  width: 80px;
+}
+#purchase {
+  width: 80px;
+}
