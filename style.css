@@ -4,19 +4,29 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.795),
+    rgba(0, 0, 0, 0.63)
+  );
+}
 .content {
-  padding: 15px;
-  border: solid 0.5px black;
-  width: 70vw;
-  margin: 10px 10px;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  /* padding-right: 0px; */
+  border: solid 1px black;
+  width: 70%;
+  /* height: 100vh; */
+  margin: 10px auto;
 }
 input {
   width: 200px;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 div {
-  display: inline-block;
-  margin: 10px;
+  margin: 8px;
 }
 label {
   margin: 10px;
@@ -59,7 +69,6 @@ td {
   font-weight: normal;
   width: 150px;
   height: 15px;
-  /* align-items: center; */
   padding: 5px;
   text-align: center;
 }
@@ -86,25 +95,21 @@ tr:nth-child(odd):hover {
   background-color: seashell;
 }
 #first:hover {
-  box-shadow: 2px 3px 4px;
-  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 1px;
 }
 #last:hover {
-  box-shadow: 2px 3px 4px;
-  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 1px;
 }
 #email:hover {
-  box-shadow: 2px 3px 4px;
-  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 1px;
 }
 
 table:hover {
   box-shadow: 2px 3px 5px;
-  transform: translate(3px, 3px);
 }
 button:hover {
   background-color: gainsboro;
-  box-shadow: 2px 3px 3px;
+  box-shadow: 1px 1px 1px;
   border-radius: 10%;
 }
 textarea:hover {
@@ -131,4 +136,33 @@ textarea:hover {
 }
 #purchase {
   width: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(white, white);
+  }
+  .content {
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+    font-size: small;
+    padding: 2px;
+    border: none;
+  }
+  table {
+    width: 80%;
+    font-size: small;
+  }
+  th,
+  td {
+    width: none;
+  }
 }
